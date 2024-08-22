@@ -1,17 +1,25 @@
 {
   "include": ["src/"],
   "deno2node": {
-    "shim": "src/shim.node.ts"
+    "shim": "src/shim.node.ts",
+    "vendorDir": "src/vendor/"
   },
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
     "declaration": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "noEmit": true,
     "noEmitOnError": true,
     "outDir": "lib/",
-    "skipLibCheck": true, // speed
+    "skipLibCheck": true,
     "strict": true,
-    "target": "ES2020"
+    "target": "esnext",
+    "baseUrl": "", // Helps with module resolution
+    "paths": {
+      "*": ["node_modules/*", "src/*"] // Adjust paths as needed
+    },
+    "lib": ["esnext", "dom"]
   }
 }

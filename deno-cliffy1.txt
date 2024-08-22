@@ -1,0 +1,449 @@
+
+> deno2node@1.13.0 prepare
+> deno2node
+
+Loading tsconfig: 516.503ms
+Basic transformations: 347.369ms
+Vendoring: 27.443ms
+Shimming: 519.731ms
+Emitting: 2.902s
+[96msrc/deno-cliffy/ansi/colors.ts[0m:[93m1[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/fmt/colors.js' or its corresponding type declarations.
+
+[7m1[0m import * as stdColors from "./../../vendor/deno.land/std@0.221.0/fmt/colors.js";
+[7m [0m [91m                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/ansi/deps.ts[0m:[93m1[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/encoding/base64.js' or its corresponding type declarations.
+
+[7m1[0m export { encodeBase64 } from "./../../vendor/deno.land/std@0.221.0/encoding/base64.js";
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/ansi/deps.ts[0m:[93m5[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/io/types.js' or its corresponding type declarations.
+
+[7m5[0m } from "./../../vendor/deno.land/std@0.221.0/io/types.js";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/command/_utils.ts[0m:[93m1[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/text/closest_string.js' or its corresponding type declarations.
+
+[7m1[0m import { closestString } from "./../../vendor/deno.land/std@0.221.0/text/closest_string.js";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/command/deps.ts[0m:[93m13[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/fmt/colors.js' or its corresponding type declarations.
+
+[7m13[0m } from "./../../vendor/deno.land/std@0.221.0/fmt/colors.js";
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/command/test/command/error_handler_test.ts[0m:[93m16[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'cmd' does not exist on type 'Error | ValidationError'.
+  Property 'cmd' does not exist on type 'Error'.
+
+[7m16[0m     assertInstanceOf(error.cmd, Command);
+[7m  [0m [91m                           ~~~[0m
+[96msrc/deno-cliffy/command/test/command/error_handler_test.ts[0m:[93m17[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'cmd' does not exist on type 'Error | ValidationError'.
+  Property 'cmd' does not exist on type 'Error'.
+
+[7m17[0m     assertEquals(error.cmd.getName(), "child");
+[7m  [0m [91m                       ~~~[0m
+[96msrc/deno-cliffy/command/test/command/error_handler_test.ts[0m:[93m44[0m:[93m20[0m - [91merror[0m[90m TS18046: [0m'error' is of type 'unknown'.
+
+[7m44[0m   assertInstanceOf(error.cmd, Command);
+[7m  [0m [91m                   ~~~~~[0m
+[96msrc/deno-cliffy/command/test/command/error_handler_test.ts[0m:[93m45[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'error' is of type 'unknown'.
+
+[7m45[0m   assertEquals(error.cmd.getName(), "child");
+[7m  [0m [91m               ~~~~~[0m
+[96msrc/deno-cliffy/command/test/command/error_handler_test.ts[0m:[93m54[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'cmd' does not exist on type 'Error | ValidationError'.
+  Property 'cmd' does not exist on type 'Error'.
+
+[7m54[0m     assertInstanceOf(error.cmd, Command);
+[7m  [0m [91m                           ~~~[0m
+[96msrc/deno-cliffy/command/test/command/error_handler_test.ts[0m:[93m55[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'cmd' does not exist on type 'Error | ValidationError'.
+  Property 'cmd' does not exist on type 'Error'.
+
+[7m55[0m     assertEquals(error.cmd.getName(), "child2");
+[7m  [0m [91m                       ~~~[0m
+[96msrc/deno-cliffy/command/test/command/error_handler_test.ts[0m:[93m82[0m:[93m20[0m - [91merror[0m[90m TS18046: [0m'error' is of type 'unknown'.
+
+[7m82[0m   assertInstanceOf(error.cmd, Command);
+[7m  [0m [91m                   ~~~~~[0m
+[96msrc/deno-cliffy/command/test/command/error_handler_test.ts[0m:[93m83[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'error' is of type 'unknown'.
+
+[7m83[0m   assertEquals(error.cmd.getName(), "child2");
+[7m  [0m [91m               ~~~~~[0m
+[96msrc/deno-cliffy/command/test/command/generic_types_test.ts[0m:[93m6[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../../../vendor/deno.land/x/conditional_type_checks@1.0.6/mod.js' or its corresponding type declarations.
+
+[7m6[0m } from "./../../../../vendor/deno.land/x/conditional_type_checks@1.0.6/mod.js";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/command/test/integration/command.ts[0m:[93m63[0m:[93m17[0m - [91merror[0m[90m TS2339: [0mProperty 'main' does not exist on type 'ImportMeta'.
+
+[7m63[0m if (import.meta.main) {
+[7m  [0m [91m                ~~~~[0m
+[96msrc/deno-cliffy/command/test/integration/utils.ts[0m:[93m12[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'Command' does not exist on type 'typeof Deno'.
+
+[7m12[0m   const cmd = new Deno.Command("deno", {
+[7m  [0m [91m                       ~~~~~~~[0m
+[96msrc/deno-cliffy/command/test/type/file_test.ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../../../vendor/deno.land/x/conditional_type_checks@1.0.6/mod.js' or its corresponding type declarations.
+
+[7m4[0m } from "./../../../../vendor/deno.land/x/conditional_type_checks@1.0.6/mod.js";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/command/upgrade/provider.ts[0m:[93m111[0m:[93m26[0m - [91merror[0m[90m TS2339: [0mProperty 'Command' does not exist on type 'typeof Deno'.
+
+[7m111[0m     const cmd = new Deno.Command(Deno.execPath(), {
+[7m   [0m [91m                         ~~~~~~~[0m
+[96msrc/deno-cliffy/command/upgrade/provider/deno_land.ts[0m:[93m22[0m:[93m7[0m - [91merror[0m[90m TS2345: [0mArgument of type 'string' is not assignable to parameter of type 'URL'.
+
+[7m22[0m       `https://cdn.deno.land/${this.moduleName ?? name}/meta/versions.json`,
+[7m  [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/command/upgrade/provider/deno_land.ts[0m:[93m24[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'ok' does not exist on type '{ json: () => any; text: () => string; }'.
+
+[7m24[0m     if (!response.ok) {
+[7m  [0m [91m                  ~~[0m
+[96msrc/deno-cliffy/command/upgrade/provider/github.ts[0m:[93m100[0m:[93m7[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 2.
+
+[7m100[0m       {
+[7m   [0m [91m      ~[0m
+[7m101[0m         method: "GET",
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m103[0m         headers,
+[7m   [0m [91m~~~~~~~~~~~~~~~~[0m
+[7m104[0m       },
+[7m   [0m [91m~~~~~~~[0m
+[96msrc/deno-cliffy/command/upgrade/provider/github.ts[0m:[93m107[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'status' does not exist on type '{ json: () => any; text: () => string; }'.
+
+[7m107[0m     if (!response.status) {
+[7m   [0m [91m                  ~~~~~~[0m
+[96msrc/deno-cliffy/command/upgrade/provider/nest_land.ts[0m:[93m21[0m:[93m74[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 2.
+
+[7m 21[0m     const response = await fetch(`https://nest.land/api/package-client`, {
+[7m   [0m [91m                                                                         ~[0m
+[7m 22[0m       method: "post",
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 24[0m       headers: { "Content-Type": "application/json" },
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 25[0m     });
+[7m   [0m [91m~~~~~[0m
+[96msrc/deno-cliffy/command/upgrade/provider/nest_land.ts[0m:[93m26[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'ok' does not exist on type '{ json: () => any; text: () => string; }'.
+
+[7m26[0m     if (!response.ok) {
+[7m  [0m [91m                  ~~[0m
+[96msrc/deno-cliffy/dev_deps.ts[0m:[93m9[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../vendor/deno.land/std@0.221.0/assert/mod.js' or its corresponding type declarations.
+
+[7m9[0m } from "./../vendor/deno.land/std@0.221.0/assert/mod.js";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/dev_deps.ts[0m:[93m14[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../vendor/deno.land/std@0.221.0/testing/mock.js' or its corresponding type declarations.
+
+[7m14[0m } from "./../vendor/deno.land/std@0.221.0/testing/mock.js";
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/dev_deps.ts[0m:[93m15[0m:[93m32[0m - [91merror[0m[90m TS2307: [0mCannot find module './../vendor/deno.land/std@0.221.0/testing/snapshot.js' or its corresponding type declarations.
+
+[7m15[0m export { assertSnapshot } from "./../vendor/deno.land/std@0.221.0/testing/snapshot.js";
+[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/dev_deps.ts[0m:[93m16[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module './../vendor/deno.land/std@0.221.0/testing/bdd.js' or its corresponding type declarations.
+
+[7m16[0m export { describe, it } from "./../vendor/deno.land/std@0.221.0/testing/bdd.js";
+[7m  [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/dev_deps.ts[0m:[93m20[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../vendor/deno.land/std@0.221.0/testing/types.js' or its corresponding type declarations.
+
+[7m20[0m } from "./../vendor/deno.land/std@0.221.0/testing/types.js";
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/dev_deps.ts[0m:[93m25[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../vendor/deno.land/std@0.221.0/fmt/colors.js' or its corresponding type declarations.
+
+[7m25[0m } from "./../vendor/deno.land/std@0.221.0/fmt/colors.js";
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/dev_deps.ts[0m:[93m29[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module './../vendor/deno.land/std@0.221.0/io/copy.js' or its corresponding type declarations.
+
+[7m29[0m export { copy } from "./../vendor/deno.land/std@0.221.0/io/copy.js";
+[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/dev_deps.ts[0m:[93m30[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module './../vendor/deno.land/std@0.221.0/datetime/format.js' or its corresponding type declarations.
+
+[7m30[0m export { format } from "./../vendor/deno.land/std@0.221.0/datetime/format.js";
+[7m  [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/dev_deps.ts[0m:[93m33[0m:[93m34[0m - [91merror[0m[90m TS2307: [0mCannot find module 'sinon' or its corresponding type declarations.
+
+[7m33[0m export { default as sinon } from "sinon";
+[7m  [0m [91m                                 ~~~~~~~[0m
+[96msrc/deno-cliffy/examples/ansi.ts[0m:[93m4[0m:[93m23[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/async/delay.js' or its corresponding type declarations.
+
+[7m4[0m import { delay } from "./../../vendor/deno.land/std@0.221.0/async/delay.js";
+[7m [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/ansi/custom.ts[0m:[93m3[0m:[93m23[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../../vendor/deno.land/std@0.221.0/fmt/colors.js' or its corresponding type declarations.
+
+[7m3[0m import { rgb24 } from "./../../../vendor/deno.land/std@0.221.0/fmt/colors.js";
+[7m [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/ansi/custom.ts[0m:[93m6[0m:[93m30[0m - [91merror[0m[90m TS2345: [0mArgument of type 'string' is not assignable to parameter of type 'URL'.
+
+[7m6[0m const response = await fetch("https://deno.land/images/hashrock_simple.png");
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/ansi/custom.ts[0m:[93m7[0m:[93m49[0m - [91merror[0m[90m TS2339: [0mProperty 'arrayBuffer' does not exist on type '{ json: () => any; text: () => string; }'.
+
+[7m7[0m const imageBuffer: ArrayBuffer = await response.arrayBuffer();
+[7m [0m [91m                                                ~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/ansi/demo.ts[0m:[93m3[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../../vendor/deno.land/std@0.221.0/fmt/colors.js' or its corresponding type declarations.
+
+[7m3[0m import * as stdColors from "./../../../vendor/deno.land/std@0.221.0/fmt/colors.js";
+[7m [0m [91m                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/ansi/demo.ts[0m:[93m82[0m:[93m67[0m - [91merror[0m[90m TS2345: [0mArgument of type 'string | number | symbol' is not assignable to parameter of type 'string'.
+  Type 'number' is not assignable to type 'string'.
+
+[7m82[0m       .map((name) => (stdColors[name] as (str: string) => string)(name))
+[7m  [0m [91m                                                                  ~~~~[0m
+[96msrc/deno-cliffy/examples/ansi/functional.ts[0m:[93m5[0m:[93m30[0m - [91merror[0m[90m TS2345: [0mArgument of type 'string' is not assignable to parameter of type 'URL'.
+
+[7m5[0m const response = await fetch("https://deno.land/images/hashrock_simple.png");
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/ansi/functional.ts[0m:[93m6[0m:[93m49[0m - [91merror[0m[90m TS2339: [0mProperty 'arrayBuffer' does not exist on type '{ json: () => any; text: () => string; }'.
+
+[7m6[0m const imageBuffer: ArrayBuffer = await response.arrayBuffer();
+[7m [0m [91m                                                ~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/ansi/image.ts[0m:[93m5[0m:[93m30[0m - [91merror[0m[90m TS2345: [0mArgument of type 'string' is not assignable to parameter of type 'URL'.
+
+[7m5[0m const response = await fetch("https://deno.land/images/hashrock_simple.png");
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/ansi/image.ts[0m:[93m6[0m:[93m49[0m - [91merror[0m[90m TS2339: [0mProperty 'arrayBuffer' does not exist on type '{ json: () => any; text: () => string; }'.
+
+[7m6[0m const imageBuffer: ArrayBuffer = await response.arrayBuffer();
+[7m [0m [91m                                                ~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/command.ts[0m:[93m4[0m:[93m23[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/http/server.js' or its corresponding type declarations.
+
+[7m4[0m import { serve } from "./../../vendor/deno.land/std@0.221.0/http/server.js";
+[7m [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/command.ts[0m:[93m26[0m:[93m30[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 2.
+
+[7m 26[0m       return fetch(url.href, {
+[7m   [0m [91m                             ~[0m
+[7m 27[0m         headers: req.headers,
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 29[0m         body: req.body,
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 30[0m       });
+[7m   [0m [91m~~~~~~~[0m
+[96msrc/deno-cliffy/examples/command/examples.ts[0m:[93m3[0m:[93m21[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../../vendor/deno.land/std@0.221.0/fmt/colors.js' or its corresponding type declarations.
+
+[7m3[0m import { red } from "./../../../vendor/deno.land/std@0.221.0/fmt/colors.js";
+[7m [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/keypress.ts[0m:[93m10[0m:[93m18[0m - [91merror[0m[90m TS2483: [0mThe left-hand side of a 'for...of' statement cannot use a type annotation.
+
+[7m10[0m for await (const event: KeyPressEvent of keypress()) {
+[7m  [0m [91m                 ~~~~~[0m
+[96msrc/deno-cliffy/examples/keypress/async_iterator.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2483: [0mThe left-hand side of a 'for...of' statement cannot use a type annotation.
+
+[7m5[0m for await (const event: KeyPressEvent of keypress()) {
+[7m [0m [91m                 ~~~~~[0m
+[96msrc/deno-cliffy/examples/prompt/custom_prompts.ts[0m:[93m3[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../../vendor/deno.land/std@0.221.0/io/buf_reader.js' or its corresponding type declarations.
+
+[7m3[0m import { BufReader } from "./../../../vendor/deno.land/std@0.221.0/io/buf_reader.js";
+[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/prompt/prompt_demo.ts[0m:[93m3[0m:[93m23[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../../vendor/deno.land/std@0.221.0/fmt/colors.js' or its corresponding type declarations.
+
+[7m3[0m import { rgb24 } from "./../../../vendor/deno.land/std@0.221.0/fmt/colors.js";
+[7m [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/examples/table/random_table_demo.ts[0m:[93m14[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../../vendor/deno.land/std@0.221.0/fmt/colors.js' or its corresponding type declarations.
+
+[7m14[0m } from "./../../../vendor/deno.land/std@0.221.0/fmt/colors.js";
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/flags/deps.ts[0m:[93m1[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/text/closest_string.js' or its corresponding type declarations.
+
+[7m1[0m export { closestString } from "./../../vendor/deno.land/std@0.221.0/text/closest_string.js";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/prompt/_generic_list.ts[0m:[93m799[0m:[93m15[0m - [91merror[0m[90m TS2345: [0mArgument of type '(a: MatchedOption<TValue, TOption, TGroup>, b: MatchedOption<TValue, TOption, TGroup>) => number' is not assignable to parameter of type '(a: MatchedOption<unknown, GenericListOptionSettings<unknown>, GenericListOptionGroupSettings<unknown, GenericListOptionSettings<unknown>>>, b: MatchedOption<...>) => number'.
+  Types of parameters 'a' and 'a' are incompatible.
+    Type 'MatchedOption<unknown, GenericListOptionSettings<unknown>, GenericListOptionGroupSettings<unknown, GenericListOptionSettings<unknown>>>' is not assignable to type 'MatchedOption<TValue, TOption, TGroup>'.
+      Type 'GenericListOptionSettings<unknown>' is not assignable to type 'TOption'.
+        'TOption' could be instantiated with an arbitrary type which could be unrelated to 'GenericListOptionSettings<unknown>'.
+
+[7m799[0m         .sort(sortByDistance);
+[7m   [0m [91m              ~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/prompt/_generic_list.ts[0m:[93m805[0m:[93m11[0m - [91merror[0m[90m TS2322: [0mType 'MatchedOption<unknown, GenericListOptionSettings<unknown>, GenericListOptionGroupSettings<unknown, GenericListOptionSettings<unknown>>>[]' is not assignable to type 'MatchedOption<TValue, TOption, TGroup>[]'.
+  Type 'MatchedOption<unknown, GenericListOptionSettings<unknown>, GenericListOptionGroupSettings<unknown, GenericListOptionSettings<unknown>>>' is not assignable to type 'MatchedOption<TValue, TOption, TGroup>'.
+
+[7m805[0m           children,
+[7m   [0m [91m          ~~~~~~~~[0m
+
+  [96msrc/deno-cliffy/prompt/_generic_list.ts[0m:[93m163[0m:[93m3[0m
+    [7m163[0m   children: Array<MatchedOption<TValue, TOption, TGroup>>;
+    [7m   [0m [96m  ~~~~~~~~[0m
+    The expected type comes from property 'children' which is declared here on type 'MatchedOption<TValue, TOption, TGroup>'
+[96msrc/deno-cliffy/prompt/deps.ts[0m:[93m11[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/fmt/colors.js' or its corresponding type declarations.
+
+[7m11[0m } from "./../../vendor/deno.land/std@0.221.0/fmt/colors.js";
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/prompt/deps.ts[0m:[93m16[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/path/mod.js' or its corresponding type declarations.
+
+[7m16[0m } from "./../../vendor/deno.land/std@0.221.0/path/mod.js";
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/prompt/deps.ts[0m:[93m22[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/io/types.js' or its corresponding type declarations.
+
+[7m22[0m } from "./../../vendor/deno.land/std@0.221.0/io/types.js";
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/prompt/deps.ts[0m:[93m23[0m:[93m37[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/text/levenshtein_distance.js' or its corresponding type declarations.
+
+[7m23[0m export { levenshteinDistance } from "./../../vendor/deno.land/std@0.221.0/text/levenshtein_distance.js";
+[7m  [0m [91m                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/prompt/test/prompt_list_test.ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../../vendor/deno.land/x/conditional_type_checks@1.0.6/mod.js' or its corresponding type declarations.
+
+[7m4[0m } from "./../../../vendor/deno.land/x/conditional_type_checks@1.0.6/mod.js";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/table/deps.ts[0m:[93m1[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/fmt/colors.js' or its corresponding type declarations.
+
+[7m1[0m export { stripAnsiCode } from "./../../vendor/deno.land/std@0.221.0/fmt/colors.js";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/table/deps.ts[0m:[93m2[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/console/unicode_width.js' or its corresponding type declarations.
+
+[7m2[0m export { unicodeWidth } from "./../../vendor/deno.land/std@0.221.0/console/unicode_width.js";
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/testing/deps.ts[0m:[93m2[0m:[93m32[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/testing/snapshot.js' or its corresponding type declarations.
+
+[7m2[0m export { assertSnapshot } from "./../../vendor/deno.land/std@0.221.0/testing/snapshot.js";
+[7m [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/testing/deps.ts[0m:[93m3[0m:[93m21[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/fmt/colors.js' or its corresponding type declarations.
+
+[7m3[0m export { red } from "./../../vendor/deno.land/std@0.221.0/fmt/colors.js";
+[7m [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/testing/deps.ts[0m:[93m8[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module './../../vendor/deno.land/std@0.221.0/path/mod.js' or its corresponding type declarations.
+
+[7m8[0m } from "./../../vendor/deno.land/std@0.221.0/path/mod.js";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/testing/snapshot.ts[0m:[93m106[0m:[93m20[0m - [91merror[0m[90m TS2339: [0mProperty 'main' does not exist on type 'ImportMeta'.
+
+[7m106[0m   if (options.meta.main) {
+[7m   [0m [91m                   ~~~~[0m
+[96msrc/deno-cliffy/testing/snapshot.ts[0m:[93m154[0m:[93m20[0m - [91merror[0m[90m TS7006: [0mParameter 'value' implicitly has an 'any' type.
+
+[7m154[0m       serializer: (value) => value,
+[7m   [0m [91m                   ~~~~~[0m
+[96msrc/deno-cliffy/testing/snapshot.ts[0m:[93m163[0m:[93m20[0m - [91merror[0m[90m TS2694: [0mNamespace '"/Users/eleanorli/CyLab/deno2node/node_modules/@deno/shim-deno/dist/index".Deno' has no exported member 'CommandOutput'.
+
+[7m163[0m   let output: Deno.CommandOutput | undefined;
+[7m   [0m [91m                   ~~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/testing/snapshot.ts[0m:[93m168[0m:[93m26[0m - [91merror[0m[90m TS2339: [0mProperty 'Command' does not exist on type 'typeof Deno'.
+
+[7m168[0m     const cmd = new Deno.Command("deno", {
+[7m   [0m [91m                         ~~~~~~~[0m
+[96msrc/deno-cliffy/testing/snapshot.ts[0m:[93m184[0m:[93m23[0m - [91merror[0m[90m TS2694: [0mNamespace '"/Users/eleanorli/CyLab/deno2node/node_modules/@deno/shim-deno/dist/index".Deno' has no exported member 'ChildProcess'.
+
+[7m184[0m     const child: Deno.ChildProcess = cmd.spawn();
+[7m   [0m [91m                      ~~~~~~~~~~~~[0m
+[96msrc/deno-cliffy/testing/snapshot_test.ts[0m:[93m26[0m:[93m26[0m - [91merror[0m[90m TS2339: [0mProperty 'Command' does not exist on type 'typeof Deno'.
+
+[7m26[0m     const cmd = new Deno.Command("deno", { args });
+[7m  [0m [91m                         ~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/_create_walk_entry.ts[0m:[93m12[0m:[93m36[0m - [91merror[0m[90m TS2503: [0mCannot find namespace 'Deno'.
+
+[7m12[0m export interface WalkEntry extends Deno.DirEntry {
+[7m  [0m [91m                                   ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/_create_walk_entry.ts[0m:[93m22[0m:[93m16[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Deno'.
+
+[7m22[0m   const info = Deno.statSync(path);
+[7m  [0m [91m               ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/_create_walk_entry.ts[0m:[93m25[0m:[93m5[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'name' does not exist in type 'WalkEntry'.
+
+[7m25[0m     name,
+[7m  [0m [91m    ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/_create_walk_entry.ts[0m:[93m37[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Deno'.
+
+[7m37[0m   const info = await Deno.stat(path);
+[7m  [0m [91m                     ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/_create_walk_entry.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'name' does not exist in type 'WalkEntry'.
+
+[7m40[0m     name,
+[7m  [0m [91m    ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m19[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Deno'.
+
+[7m19[0m const isWindows = Deno.build.os === "windows";
+[7m  [0m [91m                  ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m71[0m:[93m26[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Deno'.
+
+[7m71[0m   if (!(error instanceof Deno.errors.NotFound)) {
+[7m  [0m [91m                         ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m145[0m:[93m46[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Deno'.
+
+[7m145[0m   root ??= isGlobAbsolute ? winRoot ?? "/" : Deno.cwd();
+[7m   [0m [91m                                             ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m149[0m:[93m61[0m - [91merror[0m[90m TS2345: [0mArgument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+[7m149[0m   const resolveFromRoot = (path: string): string => resolve(absRoot, path);
+[7m   [0m [91m                                                            ~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m162[0m:[93m28[0m - [91merror[0m[90m TS2322: [0mType 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+[7m162[0m     fixedRoot = joinGlobs([fixedRoot, seg], globOptions);
+[7m   [0m [91m                           ~~~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m167[0m:[93m43[0m - [91merror[0m[90m TS2345: [0mArgument of type 'string | undefined' is not assignable to parameter of type 'string | URL'.
+  Type 'undefined' is not assignable to type 'string | URL'.
+
+[7m167[0m     fixedRootInfo = await createWalkEntry(fixedRoot);
+[7m   [0m [91m                                          ~~~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m176[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'isDirectory' does not exist on type 'WalkEntry'.
+
+[7m176[0m     if (!walkInfo.isDirectory) {
+[7m   [0m [91m                  ~~~~~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m206[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type 'WalkEntry'.
+
+[7m206[0m         walkEntry.name.match(globPattern)
+[7m   [0m [91m                  ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m230[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'isDirectory' does not exist on type 'WalkEntry'.
+
+[7m230[0m       (entry: WalkEntry): boolean => entry.isDirectory,
+[7m   [0m [91m                                           ~~~~~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m235[0m:[93m45[0m - [91merror[0m[90m TS2339: [0mProperty 'isDirectory' does not exist on type 'WalkEntry'.
+
+[7m235[0m       (entry: WalkEntry): boolean => !entry.isDirectory,
+[7m   [0m [91m                                            ~~~~~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m303[0m:[93m46[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Deno'.
+
+[7m303[0m   root ??= isGlobAbsolute ? winRoot ?? "/" : Deno.cwd();
+[7m   [0m [91m                                             ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m307[0m:[93m61[0m - [91merror[0m[90m TS2345: [0mArgument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+[7m307[0m   const resolveFromRoot = (path: string): string => resolve(absRoot, path);
+[7m   [0m [91m                                                            ~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m320[0m:[93m28[0m - [91merror[0m[90m TS2322: [0mType 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+[7m320[0m     fixedRoot = joinGlobs([fixedRoot, seg], globOptions);
+[7m   [0m [91m                           ~~~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m325[0m:[93m41[0m - [91merror[0m[90m TS2345: [0mArgument of type 'string | undefined' is not assignable to parameter of type 'string | URL'.
+
+[7m325[0m     fixedRootInfo = createWalkEntrySync(fixedRoot);
+[7m   [0m [91m                                        ~~~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m334[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'isDirectory' does not exist on type 'WalkEntry'.
+
+[7m334[0m     if (!walkInfo.isDirectory) {
+[7m   [0m [91m                  ~~~~~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m364[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type 'WalkEntry'.
+
+[7m364[0m         walkEntry.name.match(globPattern)
+[7m   [0m [91m                  ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m386[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'isDirectory' does not exist on type 'WalkEntry'.
+
+[7m386[0m       (entry: WalkEntry): boolean => entry.isDirectory,
+[7m   [0m [91m                                           ~~~~~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/expand_glob.ts[0m:[93m391[0m:[93m45[0m - [91merror[0m[90m TS2339: [0mProperty 'isDirectory' does not exist on type 'WalkEntry'.
+
+[7m391[0m       (entry: WalkEntry): boolean => !entry.isDirectory,
+[7m   [0m [91m                                            ~~~~~~~~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/walk.ts[0m:[93m183[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Deno'.
+
+[7m183[0m     for await (const entry of Deno.readDir(root)) {
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/walk.ts[0m:[93m195[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Deno'.
+
+[7m195[0m         const realPath = await Deno.realPath(path);
+[7m   [0m [91m                               ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/walk.ts[0m:[93m202[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Deno'.
+
+[7m202[0m         ({ isSymlink, isDirectory } = await Deno.lstat(realPath));
+[7m   [0m [91m                                            ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/walk.ts[0m:[93m252[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Deno'.
+
+[7m252[0m     entries = Deno.readDirSync(root);
+[7m   [0m [91m              ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/walk.ts[0m:[93m268[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Deno'.
+
+[7m268[0m       const realPath = Deno.realPathSync(path);
+[7m   [0m [91m                       ~~~~[0m
+[96msrc/vendor/deno.land/std@0.221.0/fs/walk.ts[0m:[93m275[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Deno'.
+
+[7m275[0m       ({ isSymlink, isDirectory } = Deno.lstatSync(realPath));
+[7m   [0m [91m                                    ~~~~[0m
+
+TypeScript 5.5.2
+Found 99 errors.
