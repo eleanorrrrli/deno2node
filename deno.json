@@ -3,7 +3,8 @@
   "unstable": ["byonm"],
   "fmt": { "proseWrap": "preserve" },
   "exclude": ["lib/", "package-lock.json"],
-  "vendor": true,
-  "importMap": "./src/vendor/import_map.json",
-  "lib": ["esnext"]
+  "vendor": false,
+  // "importMap": "./src/vendor/import_map.json",
+  "lib": ["esnext"],
+  "importMap": "./src/vendor/import_map.json"
 }
