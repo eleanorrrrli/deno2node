@@ -1,0 +1,9 @@
+{
+  "lock": false,
+  "unstable": ["byonm"],
+  "fmt": { "proseWrap": "preserve" },
+  "exclude": ["lib/", "package-lock.json"],
+  "vendor": true,
+  "importMap": "./src/vendor/import_map.json",
+  "lib": ["esnext"]
+}
